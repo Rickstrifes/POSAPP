@@ -1,0 +1,13 @@
+.layout {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  background-color: var(--color-white-gray);
+}
+
+.content {
+  max-height: 100vh;
+  padding: 24px;
+}
