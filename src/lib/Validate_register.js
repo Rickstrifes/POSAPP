@@ -18,8 +18,6 @@ export default function Validate_register(values) {
     errors.password = 'Required';
   } else if (values.password.length < 8 || values.password.length > 20) {
     errors.password = 'Must be greather than 8 and less then 20 characters long';
-  } else if (values.password.trim() === "") {
-    errors.password = 'Invalid Password';
   }
 
   //validate confirm password
@@ -27,8 +25,6 @@ export default function Validate_register(values) {
     errors.cpassword = 'Required';
   } else if (values.password !== values.cpassword) {
     errors.cpassword = 'Password not match';
-  } else if (values.cpassword.trim() === "") {
-    errors.cpassword = 'Invalid Confirm Passsword';
   }
 
   return errors;

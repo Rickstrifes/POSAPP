@@ -12,8 +12,6 @@ export default function Login_validate(values) {
     errors.password = 'Required';
   } else if (values.password.length < 8 || values.password.length > 20) {
     errors.password = 'Must be greather than 8 and less then 20 characters long';
-  } else if (values.password.includes('')) {
-    errors.password = 'Invalid Password';
   }
 
   return errors;
